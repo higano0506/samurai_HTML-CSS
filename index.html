@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>JavaScriptサンプル 1</title>
+</head>
+  <script>
+
+function calc(ptn){    
+// form要素を取得
+var element = document.getElementById( "target" ) ;
+
+// form要素内のラジオボタングループ(name="hoge")を取得
+var radioNodeList = element.hoge ;
+
+// 選択状態の値(value)を取得 (Bが選択状態なら"b"が返る)
+var a = radioNodeList.value ;
+var strtitle;
+if(ptn==1){
+  strtitle="a";
+}
+else if(ptn==2){
+  strtitle="b";
+}
+else if(ptn==3){
+  strtitle="c";
+}
+alert(strtitle);
+
+}
+  </script>
+<body>
+<form id="target">
+	<input name="hoge" type="radio" value="a" onclick="calc(1)"> A
+	<input name="hoge" type="radio" value="b" onclick="calc(2)"> B
+	<input name="hoge" type="radio" value="c" onclick="calc(3)"> C
+</form>
+
+</body>
+</html>

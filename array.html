@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>JavaScript 関数の記述サンプル</title>
+<script>
+function arrayPros() {
+
+/////////////////////////////////////////
+//for (初期値；　繰り返し条件；　繰り返し後処理 → j = j + 1)
+// var i = 0;
+// for (var j = 1; j <= 4; j++) {
+// i = i + j;
+// }
+// alert(i);
+
+// for (var j = 3; j >= 0; j--) {
+// alert(j);
+// }
+
+
+/////////////////////////////////////////
+// while(条件式) {
+//}
+// var chk = true;// 真
+// while(chk) {
+//     if (confirm("確認")) {
+//         chk = false; // 偽
+//     }
+// }
+
+/////////////////////////////////////////
+//変数 = new Array(配列形式のデータ);
+// var ary = new Array("Tokyo", "Osaka", "Nagoya", "Fukuoka");
+// var ary1 = ["Tokyo", "Osaka", "Nagoya", "Fukuoka"];
+// console.log(ary[0]);
+// console.log(ary[1]);
+// console.log(ary[2]);
+// console.log(ary[3]);
+// console.log("長さ：" + ary.length);
+// console.log(ary.join(":"));
+
+
+//繰り返し処理を使って配列の内容を表示
+// for (var i = 0 ; i < ary.length ; i++){
+// // console.log(ary[0]);
+// console.log(ary[i]);
+// }
+
+/////////////////////////////////////////
+// 並び替え
+// var ary = new Array(89, 4103, 123);
+
+// // 並び替え
+// ary.sort();
+
+// 表示
+// console.log(ary); // 89,123,4103
+
+
+/////////////////////////////////////////
+// Mathクラス ランダム
+for (var i = 0 ; i < 10 ; i++){
+console.log(Math.random());
+}
+
+// for (var i = 0 ; i < 10 ; i++){
+// console.log(Math.round(Math.random() * 10) % 5);
+// }
+}
+</script>
+</head>
+<body>
+<input type="button" value="check" onclick="arrayPros()" />
+</body>
+</html>
